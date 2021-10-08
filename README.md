@@ -29,3 +29,7 @@ After successfuly clone, then run
 `npm install && npm run dev`
 
 `php artisan serve`
+
+### ScreenShoot
+
+![Dashboard](public/assets/images/dashboard.png "This is the dashboard")

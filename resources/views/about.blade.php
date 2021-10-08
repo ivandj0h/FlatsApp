@@ -1,5 +1,8 @@
 @extends('layouts.main')
-@section('container')
-    <h3>{{ $title }}</h3>
-    <p>{{ $content }}</p>
-@endsection
+    @section('container')
+        <div class="col-lg-12 text-center mt-5">
+            <h1>{{ $title }}</h1>
+            <h4>Welcome!</h4>
+        </div>
+            <p>{{ $content }}</p>
+    @endsection

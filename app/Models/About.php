@@ -13,13 +13,7 @@ class About
 
     public static function all()
     {
-        return collect(self::$about_posts);
-    }
-
-    public static function shows()
-    {
-        $show = static::all();
-
-        return $show->first();
+        // return collect(self::$about_posts);
+        return self::$about_posts;
     }
 }

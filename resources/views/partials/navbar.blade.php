@@ -3,7 +3,7 @@
       <div class="d-flex flex-grow-1">
           <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
           <a class="navbar-brand d-none d-lg-inline-block" href="/">
-              FlatsApp
+            <img src="{{url('/assets/images/logo.svg')}}" alt="Logo" alt="logo" class="logo-img">
           </a>
           <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="/">
               <img src="//via.placeholder.com/40?text=LOGO" alt="logo">
@@ -14,22 +14,21 @@
               </button>
           </div>
       </div>
-      <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-          <ul class="navbar-nav ml-auto flex-nowrap">
-              <li class="nav-item">
-                  <a href="/" class="nav-link m-2 menu-item nav-active">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a href="/about" class="nav-link m-2 menu-item">About</a>
-              </li>
-              <li class="nav-item">
-                  <a href="{{ route('login') }}" class="nav-link m-2 menu-item">Login</a>
-              </li>
-              <li class="nav-item">
-                  <a href="{{ route('register') }}" class="nav-link m-2 menu-item">Register</a>
-              </li>
-
-          </ul>
-      </div>
+        <div class="d-flex">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="/" class="nav-link m-2 menu-item nav-active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link m-2 menu-item">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('login') }}" class="nav-link m-2 menu-item">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('register') }}" class="nav-link m-2 menu-item">Register</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

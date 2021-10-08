@@ -1,4 +1,5 @@
 @extends('layouts.main')
 @section('container')
-    <h3>About</h3>
+    <h3>{{ $title }}</h3>
+    <p>{{ $content }}</p>
 @endsection

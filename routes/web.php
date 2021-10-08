@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\FlatsController;
+// use App\Http\Livewire\Crud;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,4 +29,5 @@ Route::get('/about', [AboutController::class, 'index']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-Route::resource('flats', FlatsController::class);
+
+Route::get('/flats', App\Http\Livewire\Crud::class)->name('flats');

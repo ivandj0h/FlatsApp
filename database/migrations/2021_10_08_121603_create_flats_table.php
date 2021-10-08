@@ -15,10 +15,11 @@ class CreateFlatsTable extends Migration
     {
         Schema::create('flats', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable()->change();
-            $table->string('location')->nullable();
+            $table->string('name');
+            $table->string('location'); 
+            $table->string('lat'); 
+            $table->string('long'); 
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

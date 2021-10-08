@@ -1,7 +1,6 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            {{-- <x-jet-authentication-card-logo /> --}}
             <a href="/"> {!! file_get_contents('assets/images/logo.svg') !!} </a>
         </x-slot>
 

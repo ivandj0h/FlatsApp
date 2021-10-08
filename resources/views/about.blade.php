@@ -4,5 +4,5 @@
             <h1>{{ $title }}</h1>
             <h4>Welcome!</h4>
         </div>
-            <p>{{ $content }}</p>
+            <p>{{ $about }}</p>
     @endsection

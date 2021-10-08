@@ -1,7 +1,7 @@
 @extends('layouts.main')
     @section('container')
         <div class="col-lg-12 text-center mt-5">
-            <h1>{{ $title }}</h1>
+            {!! file_get_contents('assets/images/logo.svg') !!}
             <h4>Find Flats here!</h4>
         </div>
         <div class="col-md-4 offset-md-4 mt-1 pt-3">

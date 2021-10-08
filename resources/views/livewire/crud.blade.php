@@ -38,8 +38,8 @@
                         <td class="border px-4 py-2">{{ $flat->id }}</td>
                         <td class="border px-4 py-2">{{ $flat->name }}</td>
                         <td class="border px-4 py-2">{{ $flat->location}}</td>
-                        <td class="border px-4 py-2">{{ $flat->lat}}</td>
-                        <td class="border px-4 py-2">{{ $flat->long}}</td>
+                        <td class="border px-4 py-2">{{ $flat->lat}} °S</td>
+                        <td class="border px-4 py-2">{{ $flat->long}} °E</td>
                         <td class="border px-4 py-2">
                             <button wire:click="edit({{ $flat->id }})"
                                 class="flex px-4 py-2 bg-gray-500 text-gray-900 cursor-pointer">Edit</button>

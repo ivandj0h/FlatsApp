@@ -12,7 +12,7 @@ class AboutController extends Controller
     {
         return view('about', [
             "title" => "FlatsApp",
-            "about" => About::all(),
+            "contents" => About::all(),
         ]);
     }
 }

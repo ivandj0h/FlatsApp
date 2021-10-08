@@ -32,4 +32,4 @@ After successfuly clone, then run
 
 ### ScreenShoot
 
-![Dashboard](public/assets/images/dashboard.png "This is the dashboard")
+![Dashboard](public/assets/images/dashboards.png "This is the dashboard")

@@ -1,4 +1,4 @@
 @extends('layouts.main')
 @section('container')
-    <h3>Home</h3>
+    <h3>About</h3>
 @endsection

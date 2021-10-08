@@ -13,17 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::get('/', function() {
+    $title = "FlatsApp";
+
+    return view('home', compact('title'));
 });
 
+Route::get('/about', function() {
+    $title = "FlatsApp";
 
-// Route::get('/', function() {
-//     $title = "FlatsApp";
-
-
-//     return view('home', compact('title'));
-// });
+    return view('about', compact('title'));
+});
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

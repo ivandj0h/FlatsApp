@@ -13,7 +13,6 @@ class About
 
     public static function all()
     {
-        // return collect(self::$about_posts);
         return self::$about_posts;
     }
 }

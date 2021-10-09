@@ -6,6 +6,6 @@
             <h4>Welcome!</h4>
         </div>
         @foreach ($contents as $c)
-        <p class="row justify-content-md-center">{{ $c['contents'] }}</p>
+            <p class="row justify-content-md-center">{{ $c['contents'] }}</p>
         @endforeach
     @endsection

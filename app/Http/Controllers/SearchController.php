@@ -12,10 +12,11 @@ class SearchController extends Controller
         $search = Flat::latest();
 
         if(request('search')) {
-            $search->where('name', 'like', '%' .request('search') . '%');
+            $search->where('name', 'like', '%' .request('search') . '%')
+                   ->orWhere('name', 'like', '%' .request('search') . '%');
         }
 
-        dd($search);
+        // dd($search);
         return view('home', [
             'title' => "FlatsApp",
             'search' => $search->get(),

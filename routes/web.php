@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
-// use App\Http\Livewire\Crud;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,11 +20,11 @@ use App\Http\Controllers\AboutController;
 // });
 
 
-Route::get('/', function() {
-    $title = "FlatsApp";
-    return view('home', compact('title'));
-});
-
+// Route::get('/', function() {
+//     $title = "FlatsApp";
+//     return view('home', compact('title'));
+// });
+Route::get('/', [SearchController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

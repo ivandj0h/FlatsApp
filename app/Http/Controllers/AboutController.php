@@ -15,4 +15,6 @@ class AboutController extends Controller
             "contents" => About::all(),
         ]);
     }
+
+    
 }
